@@ -1,0 +1,247 @@
+/* Base styles remain unchanged */
+.cs-ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.cs-button {
+    display: flex;
+    width: 25%;
+}
+.cs-button > .cs-btn {
+    background: rgba(76, 175, 79, 1);
+    border: 1px solid white;
+    padding: 7px 30px;
+    color: white;
+}
+.hero-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.hero-sec > .left > h1 {
+    font-family: sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+}
+.hero-sec > .left > p {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+.hero-sec > .left > h1 > span {
+    color: rgba(76, 175, 79, 1);
+}
+.hero-sec > .right > img {
+    width: 500px;
+    height: 500px;
+}
+.hero-sec > .left {
+    width: 50%;
+}
+.hero-sec-cs-button {
+    background: rgba(76, 175, 79, 1);
+    border: 1px solid white;
+    padding: 7px 30px;
+    color: white;
+    display: flex;
+    width: 30%;
+}
+.dot-img {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.content > h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.content > p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.icons > img {
+    width: 5%;
+    height: 5%;
+}
+.second-content {
+    text-align: center;
+    margin-top: 50px;
+}
+.second-content > p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.cards {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.one {
+    text-align: center;
+    width: 30%;
+}
+.two {
+   text-align: center;
+   width: 30%;
+}
+.three {
+    text-align: center;
+    width: 30%;
+}
+.last-content {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.last-content > .last-sec-cs-button {
+    background: rgba(76, 175, 79, 1);
+    border: 1px solid white;
+    padding: 7px 30px;
+    color: white;
+}
+footer {
+    background: rgba(38, 50, 56, 1);
+    display: flex;
+    height: 500px;
+    align-items: center;
+    overflow: hidden;
+}
+footer > .foot-left {
+    width: 50%;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+.foot-left > p {
+    color: #fff;
+}
+.foot-mid {
+    color: white;
+    justify-content: flex-end;
+}
+.foot-mid-two {
+    color: white;
+    justify-content: flex-end;
+}
+.foot-right > h1 {
+    color: #fff;
+    justify-content: flex-end;
+}
+.one-two-three {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    gap: 0px 40px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .hero-sec > .right > img {
+        width: 400px;
+        height: 400px;
+    }
+    .hero-sec > .left {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-sec > .left > h1 {
+        font-size: 36px;
+    }
+    .content > h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-sec {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-sec > .right > img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero-sec>.left>.hero-sec-cs-button {
+        background: rgba(76, 175, 79, 1);
+        border: 1px solid white;
+        padding: 7px 30px;
+        color: white;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .one, .two, .three {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .icons > img {
+        width: 10%;
+        height: 10%;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    footer > .foot-left, .foot-right, .foot-mid, .foot-mid-two {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-sec > .left > h1 {
+        font-size: 28px;
+    }
+    .hero-sec > .right > img {
+        width: 250px;
+        height: 250px;
+    }
+    .cs-button {
+        width: 100%;
+    }
+    .cs-button > .cs-btn {
+        padding: 7px 15px;
+    }
+    .content > h1 {
+        font-size: 24px;
+    }
+    .content > p {
+        font-size: 16px;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons > img {
+        width: 15%;
+        height: 15%;
+        margin-bottom: 10px;
+    }
+    .last-content > .last-sec-cs-button {
+        width: 80%;
+    }
+}
