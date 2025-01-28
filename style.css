@@ -168,6 +168,15 @@ footer > .foot-left {
     .content > h1 {
         font-size: 32px;
     }
+    .hero-sec>.left>.hero-sec-cs-button {
+        background: rgba(76, 175, 79, 1);
+        border: 1px solid white;
+        padding: 7px 30px;
+        color: white;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -175,6 +184,9 @@ footer > .foot-left {
         flex-direction: column;
         text-align: center;
         justify-content: center;
+    }
+    .cs-button {
+        display: none;
     }
     .hero-sec > .right > img {
         width: 100%;
